@@ -1,0 +1,220 @@
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET*/
+/*START REAL CSS*/
+
+body {
+  background-color: #8b9dc3;
+  font-family: "San Francisco", sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #3b5998;
+  width: 100%;
+}
+
+h1, h2 {
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bolder;
+	padding-top: 30px;
+	text-align: left;
+	padding-left: 10%;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.commentSubmit {
+  background-color: #8b9dc3;
+  height: 120px;
+  margin-top: 10px;
+}
+
+.comment {
+  border-bottom: 1px solid black;
+  background-color: white;
+  width: 90%;
+	padding: 20px 0;
+  margin: 0 auto;
+}
+
+.comment:first-of-type,
+.reply:first-of-type {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-top: solid 7px #dfe3ee;
+	xbox-shadow: ;
+}
+
+.comment:nth-last-child(1),
+.reply:nth-last-child(1){
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom: solid 7px #dfe3ee;
+}
+
+.commentBox, .replyBox {
+	border: none;
+	background-color: #dfe3ee;
+	height: 40px;
+	padding-left: 20px;
+	margin-top: 20px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.commentBox,
+.replyBox {
+	border-right: solid 1px grey;
+}
+
+.commentButton, .replyButton {
+	border: none;
+	background-color: #dfe3ee;
+	height: 42px;
+	padding: 0 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.replyBox {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.commentBox:focus,
+.commentButton:focus,
+.replyBox:focus,
+.replyButton:focus,
+.deleteButton:focus,
+.likeButton:focus,
+.dislikeButton:focus,
+.showReplyButton:focus {
+	outline: none;
+}
+
+.commentText {
+	padding-bottom: 10px;
+}
+
+.replyText {
+	padding-bottom: 10px;
+}
+
+.comment:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+.commentList {
+  background-color: #8b9dc3;
+	padding-bottom: 100px;
+}
+
+.deleteButton {
+  color: purple;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  width: 20%;
+}
+
+.showReplyButton {
+  color: hotpink;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  width: 20%;
+}
+
+.likeButton {
+  color: green;
+  border: none;
+  background: none;
+  cursor: pointer;
+  float: left;
+  width: 20%;
+}
+
+.dislikeButton {
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+  float: right;
+  width: 20%;
+}
+
+.replyContainer {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.reply {
+  border-top: 1px solid black;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.reply:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+.reply p {
+  width: 100%;
+}
